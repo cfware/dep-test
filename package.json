@@ -1,0 +1,33 @@
+{
+	"name": "@cfware/dep-test",
+	"version": "0.1.0",
+	"private": true,
+	"description": "**Description here and in README.md**",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"release": "standard-version --sign",
+		"pretest": "cfware-lint .",
+		"test": "c8 node test.js"
+	},
+	"engines": {
+		"node": ">=13.7.0"
+	},
+	"author": "Corey Farrell",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cfware/dep-test.git"
+	},
+	"bugs": {
+		"url": "https://github.com/cfware/dep-test/issues"
+	},
+	"homepage": "https://github.com/cfware/dep-test#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"@cfware/lint": "^1.1.1",
+		"c8": "^6.0.0",
+		"standard-version": "^7.0.0",
+		"libtap": "^0.2.0"
+	}
+}
